@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Main goal : there will be two option user choice and computer choice and wins and loss will be depend 
+on three scenarios  bat defeats ball
+ball defeats wicket
+wicket defeats bat -->
+  <title>Cricket Game</title>
+  
+  <style>
+
+/* to make contents in center    */
+    body{
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Bat Ball Stump Game</h1>
+
+<!-- both the choices should be inside button -->
+
+
+    <!-- this is user choice -->
+    <button id="bat" onclick="
+    console.log('You have choosen Bat');
+    
+    //    Computer choice should be random thatswhy we use math.random() fxn
+    //  This will generate random number between 0 and 3
+    let randomNumber = Math.random()*3;
+
+    let computerChoice ;
+    if(randomNumber > 0 && randomNumber <= 1)
+    {
+      // let computerChoice = 'Bat';
+          computerChoice = 'Bat';
+    }else if(randomNumber > 1 && randomNumber <= 2) {
+
+        // let  computerChoice = 'Ball';
+            computerChoice = 'Ball';
+
+    }
+    else{
+      // let computerChoice = 'Stump';
+
+          computerChoice = 'Stump';
+    }
+
+    console.log(`Computer choice is ${computerChoice}`)
+
+
+if 
+    
+    
+    
+    
+    
+    
+    
+    
+    ">Bat</button>
+    
+   
+
+
+
+
+    <button id="ball">Ball</button>
+    <button id="stump">Stump</button>
+
+
+
+
+
+  </main>
+</body>
+</html>

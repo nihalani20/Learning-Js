@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cricket Game</title>
+
+  <style>
+    /* to make contents in center    */
+    body {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>Bat Ball Stump Game</h1>
+
+    <button id="bat" onclick="
+    generateComputerChoice();
+     let resultMsg;
+      if (computerChoice === 'Ball') {
+        resultMsg = 'User won!';
+      } else if (computerChoice === 'Stump') {
+         resultMsg = 'Computer has won!';
+      }
+      else {
+       resultMsg = `It's a tie!`;
+      }
+    
+    
+alert(`You have choosen Bat \n Computer choice is generateComputerChoice()\n  ${resultMsg}`)
+    ">Bat</button>
+
+    <button id="ball" onclick="
+    generateComputerChoice();
+       resultMsg;
+         if (computerChoice === 'Bat') {
+         resultMsg = 'Computer has won!';
+       } else if (computerChoice === 'Ball') {
+          resultMsg = `It's a tie!`
+       } else {
+         resultMsg = 'User won!'
+       } 
+    
+    
+    
+    alert(`You have choosen Ball \n Computer choice is generateComputerChoice()\n  ${resultMsg}`) ">Ball</button>
+
+    <button id="Stump" onclick="
+    generateComputerChoice();
+      let resultMsg;
+         if (computerChoice === 'Bat') {
+         resultMsg = 'Computer has won!';
+       } else if (computerChoice === 'Ball') {
+          resultMsg = `It's a tie!`
+       } else {
+         resultMsg = 'User won!'
+       } 
+alert(`You have choosen Stump\n Computer choice is generateComputerChoice()\n ${resultMsg}`)
+">Stump</button>
+
+  </main>
+  <script>
+
+    
+    function generateComputerChoice(){
+       let computerChoice;
+      let randomNumber = Math.random() * 3;
+      if (randomNumber <= 1) {
+        computerChoice = 'Bat';
+      } else if (randomNumber <= 2) {
+        computerChoice = 'Ball';}
+      else {
+        computerChoice = 'Stump';
+      }
+    }
+
+
+       function resultMessage3() {
+          let resultMsg;
+         if (computerChoice === 'Bat') {
+          return resultMsg = 'User won!';
+         }
+         else if (computerChoice === 'Ball') {
+          return resultMsg = 'Computer has won!'
+         } else {
+          return  resultMsg = `It's a tie!`
+         }
+        }
+
+
+
+  </script>
+</body>
+
+</html>

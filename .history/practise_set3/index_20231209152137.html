@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Practice Exercise Variables</title>
+</head>
+<body>
+  
+  <h1 id="name"></h1>
+  <script>
+    const myName="Komal Nihalani";
+    document.querySelector('#name').innerText=`My name is ${myName}.`
+
+  //  let jeansPrice = 15599-(10/100*15599)-272;
+  //  let bagPrice=2499-(41/100*2499)-29;
+
+   const gst = 18;
+    let cartValue = Math.round(((15599-(10/100*15599))-272 +(2499-(41/100*2499))-29+25+20) * (100+gst)/100); 
+
+    console.log(cartValue)
+
+    console.log(eval('2=3=4=5*6'))
+   
+
+
+  </script>
+</body>
+</html>

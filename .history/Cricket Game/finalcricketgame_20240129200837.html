@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cricket Game</title>
+  <style>
+    body{
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bat Ball Stump Game</h1>
+  <button id = "bat" onclick=" 
+
+
+//As this below method is only work for bat you have to make new again so this is not good use of fxn
+// function generateRandomMove(){
+//   let random = Math.random();
+//   let randomMove = random*3;
+//   return randomMove;
+// }
+
+// function generateComputerChoice()
+// {
+//   if(generateRandomMove()>1)
+//   {
+//    return computerChoice ='Bat';
+//   }else if (generateRandomMove()>2)
+//   {
+//     return computerChoice = 'Ball';
+//   }else{
+//      return computerChoice = 'Stump';
+//   }
+// }
+// function resultMessage(){
+//   let resultMsg;
+//   if(computerChoice === 'Bat')
+//   {
+//    return  resultMsg = l`It's a tie;`
+//   }else if(computerChoice === 'Ball')
+//   {
+//      return resultMsg = 'User won';
+//   }else{
+//      return resultMsg ='Computer has won!'
+//   }
+// }
+
+     playGame('Bat')">Bat</button>
+  <button id ="ball" onclick="playGame('Ball')">Ball</button>
+
+  <button id="Stump" onclick="playGame('S')">Stump</button>
+
+  <script>
+    let computerChoice;
+    function generateComputerChoice()
+    {
+      let randomMove = Math.random()*3;
+      if(randomMove <= 1)
+      {
+        computerChoice ='Bat';
+      }else if(randomMove <= 2)
+      {
+        computerChoice='Ball';
+      }else{
+        computerChoice = 'Stump';
+      }
+    }
+    
+    function playGame(userChoice){
+generateComputerChoice()
+   let resultMsg;
+   if(userChoice === computerChoice)
+   {
+    resultMsg = `It's a tie!`
+   }else if(
+   (userChoice === 'Bat' && computerChoice ==='Ball') || (userChoice === 'Ball' && computerChoice ==='Stump') || (userChoice === 'Stump' && computerChoice ==='Bat') 
+   )
+   {
+    resultMsg='User won!';
+   }else{
+    resultMsg = 'Computer has won!';
+   }
+    
+
+    alert(`You have choosen ${userChoice}\n Computer Choice is ${computerChoice}\n ${resultMsg} `);
+      
+  }
+  </script>
+</body>
+</html>
